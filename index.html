@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh-Hans">
+<html lang="zh-CN">
 <head>
 
     <!--[if lt IE 9]>
@@ -22,7 +22,7 @@
 <meta property="og:title" content="Hexo">
 <meta property="og:url" content="http://example.com/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:locale">
+<meta property="og:locale" content="zh_CN">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
 
@@ -261,6 +261,69 @@
     <link class="menu-list" tags="标签" friends="友情链接" about="关于我"/>
 </nav>
       <div class="body-wrap">
+  
+    <article id="post-C语言程序设计练习" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2021/11/10/C%E8%AF%AD%E8%A8%80%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E7%BB%83%E4%B9%A0/" class="article-date">
+      <time datetime="2021-11-10T12:53:33.000Z" itemprop="datePublished">2021-11-10</time>
+</a>
+
+
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2021/11/10/C%E8%AF%AD%E8%A8%80%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E7%BB%83%E4%B9%A0/">C语言程序设计练习</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
+        <p><strong>1.输入一个圆的半径r（0&lt;r≤1000)，圆周率PI为3.14159，计算并输出该圆的面积(保留一位小数)。</strong></p>
+<p>#define _CRT_SECURE_NO_WARNINGS 1<br>#include &lt;stdio.h&gt;<br>int main()<br>{<br>    int r;<br>    float s, p = 3.14159;<br>    scanf(“%d”, &amp;r);<br>    if (r &lt;= 0 || r &gt; 1000)<br>        printf(“输入的半径不在限定范围内\n”);<br>    else {<br>        s = r * r * p;<br>        printf(“%.1f”, s);<!--通过if语句实现对r的取值范围的限定--><br>    }<br>    return 0;<br>}</p>
+<p><strong>2.输入两个正整数，输出其求差算式。</strong></p>
+<p>#define _CRT_SECURE_NO_WARNINGS 1<br>#include &lt;stdio.h&gt;<br>int main()<br>{<br>    int a, b, c;<br>    scanf(“%d %d”, &amp;a, &amp;b);<br>    c = a - b;<br>    printf(“%d-%d=%d”, a, b, c);<br>    return 0;<br>}</p>
+<p><strong>3.输入一个十六进制整数，输出其八进制、十进制无符号数。</strong></p>
+<p>#define _CRT_SECURE_NO_WARNINGS 1<br>#include &lt;stdio.h&gt;<br>int main()<br>{<br>    int a;<br>    scanf(“%x”, &amp;a);<br>    printf(“%o %u”, a, a);<br>    return 0;<br>}</p>
+<p><strong>4.输入格式为“整数字符串整数，整数”的数据，其中字符串长度为固定值5，将三个整数求和输出。</strong></p>
+<p>#define _CRT_SECURE_NO_WARNINGS 1<br>#include &lt;stdio.h&gt;<br>int main()<br>{<br>    int a, b, c;<br>    scanf(“%d%*5c%d,%d”, &amp;a, &amp;b, &amp;c);<!--注意格式化输入的运用--><br>    printf(“%d”, a + b + c);<br>    return 0;<br>}</p>
+
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+
+      
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
   
     <article id="post-My-First-Blog" class="article article-type-post" itemscope itemprop="blogPost">
   
